@@ -4,6 +4,8 @@ import javax.persistence.EntityManager;
 
 import br.com.alura.loja.modelo.Pedido;
 
+import java.math.BigDecimal;
+
 public class PedidoDao {
 
 	private EntityManager em;
@@ -14,6 +16,12 @@ public class PedidoDao {
 
 	public void cadastrar(Pedido pedido) {
 		this.em.persist(pedido);
+	}
+
+	public BigDecimal valorTotalVendido() {
+		String jpql = "SELECT SUM(p.valorTotal) FROM Pedido p";
+		return em.createQuery(jpql, BigDecimal.class)
+				.getSingleResult();
 	}
 
 }
