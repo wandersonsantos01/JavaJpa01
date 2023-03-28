@@ -1,5 +1,7 @@
 # Java e JPA
 
+### Hibernate
+
 ### Relationships
 
 ### JPQL
@@ -13,3 +15,7 @@
 ### Lazy Load
 
 ### JOIN FETCH
+
+### JPQL with multiples conditions
+
+### Criteria API
