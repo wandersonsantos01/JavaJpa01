@@ -19,3 +19,9 @@
 ### JPQL with multiples conditions
 
 ### Criteria API
+
+### Embeddable
+
+### Inheritance
+
+### Composite key
